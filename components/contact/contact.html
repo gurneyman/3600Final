@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-8">
+      <form validate class="simple-form top">
+        Name:
+        <input type="text" ng-model="user.name" />
+        <br /> E-mail:
+        <input type="email" ng-model="user.email" />
+        <br /> Gender:
+        <input type="radio" ng-model="user.gender" value="male" /> Male
+        <input type="radio" ng-model="user.gender" value="female" /> Female
+        <br />
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br>
+        <label for="genre">Fav Genre: </label>
+        <select name="genre" id="">
+          <option value="">Metal</option>
+          <option value="">Country</option>
+          <option value="">Rap</option>
+        </select>
+        <br>
+        <input type="button" ng-click="reset()" value="Reset" />
+        <input type="submit" ng-click="update(user)" value="Submit" />
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-8">
+      <h2>Sign up for our newsletter!</h2>
+      <form validate class="simple-form">
+        Name:
+        <input type="text" ng-model="user.name" />
+        <br /> E-mail:
+        <input type="email" ng-model="user.email" />
+        <br />
+        <input type="submit" ng-click="update(user)" value="Submit" />
+      </form>
+    </div>
+  </div>
+</div>

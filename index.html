@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="brovyn" ng-controller="mainCtrl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bro-Vyn</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/angular-hamburger-toggle/dist/angular-hamburger-toggle.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1><a href="./#/" ng-click="showMenu = false">Bro-Vyn</a></h1>
+    <div class="hamburger">
+      <hamburger-toggle ng-click="showMenu = !showMenu"></hamburger-toggle>
+    </div>
+  </header>
+  <nav ng-class="{'showMenu' : showMenu}">
+    <ul>
+      <li><a href="./#/Contact" ng-click="showMenu = false">Contact</a></li>
+      <li><a href="./#/About" ng-click="showMenu = false">About</a></li>
+      <li><a href="./#/Cart" ng-click="showMenu = false">Cart</a></li>
+      <li><a href="./#/Sitemap" ng-click="showMenu = false">Sitemap</a></li>
+    </ul>
+  </nav>
+  <ng-view></ng-view>
+  <footer class="text-center">
+    &copy; Bro-Vyn Vinyl Shop 2015
+  </footer>
+  <!-- <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-route/angular-route.min.js"></script>
+  <script src="bower_components/angular-hamburger-toggle/dist/angular-hamburger-toggle.min.js"></script>
+  <!-- App Base -->
+  <script src="app.js"></script>
+  <script src="config.js"></script>
+  <script src="js/services/album-srv.js"></script>
+  <!--<script src="js/services/cart-srv.js"></script>-->
+  <!-- Controllers -->
+  <script src="mainCtrl.js"></script>
+  <script src="components/home/homeCtrl.js"></script>
+  <script src="components/about/aboutCtrl.js"></script>
+  <script src="components/album/albumCtrl.js"></script>
+  <script src="components/cart/cartCtrl.js"></script>
+  <script src="components/contact/contactCtrl.js"></script>
+  <script src="components/sitemap/sitemapCtrl.js"></script>
+</body>
+
+</html>

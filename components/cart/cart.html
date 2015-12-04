@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <table class="cart" style="width: 100%; margin-top: 140px;">
+        <tbody ng-repeat="album in albums">
+          <tr>
+          <td style="width: 25%; color: white;">{{ album.name }}</td>
+          <td style="color: white;">{{ album.price | currency }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="cart_list" style="width: 100%;">
+        <tbody>
+          <tr>
+          <td style="width: 25%; color: white;">Total</td>
+          <td style="color: white;">{{ 5.99 * 9 | currency }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+</div>
+
+</div>

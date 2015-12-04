@@ -1,0 +1,34 @@
+<div class="hero"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 center-block tagline">
+      <h1>Sitemap</h1>
+      <ul>
+        <li><a href="./#/" ng-click="showMenu = false">Bro-Vyn</a></li>
+        <li>
+          <ul>
+            <li><a href="./#/Contact" ng-click="showMenu = false">Contact</a></li>
+            <li><a href="./#/About" ng-click="showMenu = false">About</a></li>
+            <li><a href="./#/Cart" ng-click="showMenu = false">Cart</a></li>
+            <li><a href="./#/Sitemap" ng-click="showMenu = false">Sitemap</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="home container-fluid">
+  <div class="row">
+    <div class="item" ng-repeat="(albumName, album) in albums" style="position: relative;">
+      <a href="./#/Album/{{ albumName }}"><img class="img-responsive" src="{{ album.cover_url }}" alt="{{ album.name }} Cover Art"></a>
+      <div class="item__details">
+        <a href="./#/Album/{{ albumName }}">{{ album.name }}</a>
+        <br>
+        <a href="./#/Album/{{ albumName }}">{{ album.artist }}</a>
+        <br>
+        <a href="./#/Album/{{ albumName }}">{{ album.price | currency }}</a>
+      </div>
+    </div>
+    <!-- <div class="col-sm-6 item" ng-repeat-end ng-if="$index !== 0 && $index % 4 === 0">FEATURED CONTENT</div> -->
+  </div>
+</div>

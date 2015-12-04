@@ -1,0 +1,19 @@
+<div class="album container-fluid">
+  <div class="row">
+    <div class="col-xs-12 text-center">
+      <img src="{{ album.cover_url }}" alt="{{ album.name }} Cover Art">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 text-center">
+      <h2>{{ album.name }}</h2>
+      <h3>{{ album.artist }}</h3>
+      <h3>{{ album.price | currency }}</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 text-center">
+      <a href="./#/">Back to shop</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="hero"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 center-block text-center tagline">
+      <h1>Find Your Groove</h1>
+    </div>
+  </div>
+</div>
+<div class="home container-fluid">
+  <div class="row">
+    <div class="item" ng-repeat="(albumName, album) in albums">
+      <a href="./#/Album/{{ albumName }}"><img class="img-responsive" src="{{ album.cover_url }}" alt="{{ album.name }} Cover Art"></a>
+      <div class="item__details">
+      <a href="./#/Album/{{ albumName }}">{{ album.name }}</a>
+      <br>
+      <a href="./#/Album/{{ albumName }}">{{ album.artist }}</a>
+      <br>
+      <a href="./#/Album/{{ albumName }}">{{ album.price | currency }}</a>
+      </div>
+    </div>
+    <!-- <div class="col-sm-6 item" ng-repeat-end ng-if="$index !== 0 && $index % 4 === 0">FEATURED CONTENT</div> -->
+  </div>
+</div>

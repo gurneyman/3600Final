@@ -1,0 +1,108 @@
+* {
+    color: white;
+  }
+
+  body {
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+  }
+  a,
+  a:hover,
+  a:visited {
+    color: white;
+  }
+  
+  nav {
+    opacity: 0;
+    transition: opacity .5s, bottom .5s, right .5s, top .5s;
+    position: fixed;
+    z-index: 9997;
+    background: black;
+    padding-top: 70px;
+    top: 40px;
+  }
+  
+  .showMenu {
+    opacity: 1;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .item {
+    box-sizing: border-box;
+    width: 50%;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    display: inline-block;
+    height: auto;
+    margin-top: -5px;
+  }
+  
+  .item img {
+    width: 100%;
+    height: auto;
+    transition: width .5s, height .5s;
+  }
+  .item img:hover {
+    width: 120%;
+  }
+  
+  .hero {
+    background-image: url('../img/turntableinstared.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 30px;
+    height: 300px;
+  }
+  
+  .material-design-hamburger__layer {
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+  }
+  input,
+  select,
+  option {
+    color: black;
+    margin: 2px;
+  }
+  .tagline {
+    margin: 20px;
+    margin-bottom: 30px;
+  }
+  .about {
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 130px;
+  }
+  .album {
+    margin-top: 130px;
+  }
+  .album img {
+    max-width: 300px !important;
+  }
+  header {
+    position: fixed; height: 100px; background: #a6483e; width: 100%; top: 0; z-index: 9999;
+  }
+  header h1 {
+    position: fixed; left: 25px; z-index: 9999;
+  }
+  .hamburger {
+    position: fixed; right: 25px; top: 33px; z-index: 9999;
+  }
+  footer {
+    margin-top: 20px; border-top: 1px white solid;
+  }
+  .item__details {
+    position: absolute; bottom: 0; background: rgba(0, 0, 0, .5); width: 100%; padding: 15px; color: white; font-size: 14px;
+  }
+  .simple-form.top {
+    margin-top: 160px;
+  }
+  @media screen and (min-device-width: 800px) { 
+    .item {
+    box-sizing: border-box;
+    width: 25%;
+  }
+  }
