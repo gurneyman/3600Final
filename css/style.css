@@ -32,6 +32,7 @@
   
   .item {
     box-sizing: border-box;
+    position: relative;
     width: 50%;
     margin: 0px;
     padding: 0px;
@@ -100,9 +101,12 @@
   .simple-form.top {
     margin-top: 160px;
   }
-  @media screen and (min-device-width: 800px) { 
+  @media screen and (min-device-width: 700px) { 
     .item {
     box-sizing: border-box;
     width: 25%;
-  }
+    }
+    .tagline h1{
+      font-size: 1.75em;
+    }
   }
